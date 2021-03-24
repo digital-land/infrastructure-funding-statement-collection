@@ -1,10 +1,10 @@
-# XXX collection
+# Infrastructure Funding Statement collection
 
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/digital-land/brownfield-land/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/digital-land/infrastructure-funding-statement-collection/blob/master/LICENSE)
 
-A collection of XXX collected from YYY.
+A collection of Infrastructure Funding Statements.
 
-The national dataset is in a format consistent with other Digital Land datasets as defined by the [ZZZ schema](https://digital-land.github.io/specification/schema/ZZZ/).
+The national dataset is in a format consistent with other Digital Land datasets as defined by the [infrastructure-funding-statement schema](https://digital-land.github.io/specification/schema/infrastructure-funding-statement/).
 
 # Collection
 
