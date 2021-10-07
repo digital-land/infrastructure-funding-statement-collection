@@ -1,8 +1,612 @@
 INFRASTRUCTURE_FUNDING_STATEMENT_DATASET=$(DATASET_DIR)infrastructure-funding-statement.csv
 INFRASTRUCTURE_FUNDING_STATEMENT_TRANSFORMED_FILES=\
-    $(TRANSFORMED_DIR)infrastructure-funding-statement/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3.csv
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/01be951a7fa102d7b0fe11474d6f0425ec9a1adac10e062a203be8c3a2e03cde.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/02aacaa95c74a362e7d3a8dde05047cdad3cd9ae70f72d4a2f94c1bc690968b0.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/049fdc0cd8ee6323e4497bb849332e2a420f8c1d95817eda9a3866dbe3601d28.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/0714b0476fcfec1282edfa787d842abcd417751a83c1b0f072bb9d4fbb1cb28e.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/074ee8a00322c6e03bb5c32da2a9b6a4a9c98c67748d753cbacbc5c3b04ffa67.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/07d19622d1bc1dadbfc2036b04f62eb5645fcacb8c8cee96f661097ff5fd837f.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/09caf6f7c20614c59ceb17721eb97a80c79afc091e5c4911b5ef53c7423f13d4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/0b2e3a24d7afaf246af59140acf3a6b6dd251bf7492e7ac6a97a6752da51c0af.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/0f3f9ac72b6c00a62b90817adeb3f9463f2557e4ccba021dfb8bf3a00d9fbfc4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/1073479548b7f463221529fa0e050ac1608291d1c468f48b0cbbc138ad0f8c13.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/12cc46f327184365c7158234ea77a062590adb83749a7800a4c11a1055addb4b.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/16588bc1d29e4a9dc98eee32e6903d43791c166874fd70c8383ca70a6785276f.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/19754c7b5efdf964e6e2e944c6b80735735af807ecb11f8d9b0eb99fccab08a2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/1acccef654bd756bdab29929b9ad59b83c29312a93c53dca06d407d4411233ff.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/1dec7f2e4c42ecaa22fd1e3a2819c9448c39faced8f6490c9685691bc6465e8e.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/222fc750b0a22b61f1779d962b49285f34dedfd7ca979de1d21f7b7e805c913c.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/24fe3893a253997ee2751105ccc3d105ff13f29bc465f9b8ebcf4bd398764de4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/28df3c3e2041314c17bf57c254a0f10ead3d5cfffe9024215fbd42b1f1ac582d.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2b55e2677181c9ef7bf19708899308409c080551d4c4942ab235af5d2c13c58b.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2cd8772eec715160cb3fb3fef2e214a29cdb92debc8af8e5280af9b341b37a0b.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2e2c2240217726a402e97be53c3ae0f19c82c005228cbfa76ec0ed2e04bf24b6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2e61449d1be8c63fd406f631dbdd425667310430e76dd958a07505dda60dd495.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2e8d058c65dfa1125c50dc338bc5b0bfa7f022095df7b17893faca06f95fb6cc.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2efdd3a07a3785e92b2502239f928c9e4d924e4ca207a470ea4627af9d9b5a8a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2f36a61dfc7c94bbc01d6f6cfac014759658146fab1b6f8a1e06ca7829ab7cfa.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/2fe9e99f58656dc72b0d68e2b25a4e89231ba31a8398eb984b3f5b81173b4fed.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/31884f93aa81ce5fab29e438b38afbc85a25dba5b049a2f68c34ba3c5a429a99.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3704eee04998e079c0cf2647b9dce20de9ba4738ff18a7894a8dfcb7912612e6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/378fa5366ad0e69fae22e5eda42e3719d8663bd2a050f12ccf7318f5229d0f2a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3a0b2d8b16980503c8ffb84d310a44d8970c3f45688c42a4d5cb344425137ded.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3b1eb7aeae299dfaae06b3b718890e7f068f1f50d9c419720bb0824236ae86de.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3b3b20cf2d826c61ecd02cd121b633c4b1675cd069a11d72301fb459fbc0c200.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3c75a892d85006b883832359adda7c27ea8f2855781955d1d6653b319f1efd26.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3cbf0b1a304271b6e885b5cad87dcdf2f8c811144d694745caf3fbe1409e695a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3daa7fd4cee035dd2bd113640763ac8e85827245040594fa441c4c271af02940.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3dded714e590eff05269597106d5f3091bd6d56e254037f304fe8b42fd423570.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/3ebe7169e8fcb3a7dd87061c408b8ba8acf0afb601f0044557eb5aa70d6e264a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/42c3327452e907d99308647a8ae3cd6e14b8e19e424a25c714ef78bb578c8703.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/42d6bd71666442705853cf48ac485b14d5c0dce764ca72349b42c09e0ee0fef2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/42ea1960f9489a696bfe032f655cbcac9ec399279485a3cf5a6d1ac74857926a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/43a7cc998920a68475fe34b302b7ee742465341ce0bf1e058ec8b355857163f2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/447792d3aca497b88e691d20bccd554573df188c284be10bc3b6b1be59d5ac91.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/4615301e4239d001be91451b86039a9bf733f6ec1d2ce34e8f117d1713de8ce3.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/480ca8877525407b0550e98a900d49636ab0ce1d251724d30fbc57ab1a6fc544.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/48961285d772a2626b9d2e316066aff33ed5ae2ada9810c0e2f817cd50e8aa53.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/48e812927803dc4778b2ee5d468f36f8d0d1e000f5be0280eb8e20941d9efe12.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/4c76222c3e8147225514dc876d18de6be44ff60394a353bfff2dbdfd2ddeff75.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/4dfc0342a1d8b133f5bf03cda60127a47d17969e593c6a976dc0e5068ad1b78a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/4fdd0e1248dd1ad5ae5c3d71197fcf9ad3d245bb6cd88e9b245c5978e9c45e91.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/53c4f3c31fab2e91f62680fc7b84a8718277cab224f6a47079004338506fb181.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/558bf532ec056bf6e7b017a89647dd559d873808cf883dd0dd770b7e6c085dee.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/565c81c97e7096fbd5b18655cdbc30b30d0b81bcb6139ed6ec1ab55fef10f145.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/573bc717f35f65c42a5c5195a325398e5c57d4104c1b98b369f361ea780c626c.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/5a2a1f1c2bfbc1d1cf45932d51aa69cb62cd168043223295fea067c7583a9049.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/5b45771afc8eb4a2b400d7d3266e2d37cc206a17feb078e14b6f9461e8eb3ab6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/5b79ee5122c4781ba9e187cee3a17c4073c002e154a9797759c45fffc5d38626.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/5bc2c2207f771efd208c3125f33c84f886e1fa1dabe8fec0820c9a2809a6bc2e.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/5e0866263cf16b6f6bce971c901d7abb8d923104f8a10daa740d1894f2ab3d66.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/62ff5ca2b8276ef277216290f04b4e60068f802097972e4efcb070bf626ca2d8.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/63ca8f5cc057e0cab803c653fc24482f4dbaf15313365721628b72e6181ceb82.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/645db73ddaad9c75d18a0fbfe2361aa02f56e159a02cf227545921962e9fc849.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/6467dcf7a44b60195b087d48161852b1491178ba44d09c1dc40130162c68a4f1.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/67b489d63d3e7aad691a1cca101e3ef34754e404768248508c6280514adf305a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/69b814bafd46e3d0db937b88c34ec8794d91919b34f86b1765e432143fc1ec97.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/6ae597d29b792f496cf336adb58cb4734774af0890bd05681d042ea0652b7fa8.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/6b21367609b1e5313eef2e88d1d70c7ac28c33b29c75844961d7899e95c19869.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/700ee0f270f6946e52fde248e6508bf7fd1749c5574c90f7fff98523283b2200.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/716b70c75cfc7c437f54b8cf97e156801ce7816ec02c597fc0d44dc2dc0febc5.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/72cd090b673e88507e99770ec36d66f4dc00fbc5110cea455ab3680e9ffdaeea.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/74b22e643ce82e8cc69002b52386c08e846006a2a2a8cbc7a9ea610679e73d7b.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7563733e346d813effa9d7b9bd1c9ac1c50bd5589630dc539516d4a6515d78c8.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/75d9167b80dfb83d1404997a06687c37b492e3206a73e50b1217053b21b1b707.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7950d2a3e60a63cfe35203540ff38726df385be477e707561d1ac084e2dcf750.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7a6d000fb1b8971934931d499f3c3f3b65f81ee26a3e94cc80fdaee05ec1f6f5.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7af6d78e89d2b3808dda509cb12df22a47a7838bc74c68b6fcc4e1b1ffff1263.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7b2ab124055f31d6a6ff5a0d969cc14fa75d50b1bd06978b2f0d6ea0ed827734.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7bc71c716645c65f33a1395980fff06e272ff9716cc84075023ff79dada6aa80.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7d001a02c804711bd21933f25f329c1f6160aae309a9d8c25999f4582a92b000.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/7f214e55651666ca645fcc09697887707dd899b49a12a660bcfff817e5badeae.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/806d62c4930aba7f31c1ecee9346c7fcc8d718a2f771c58473f8b0fad060aefc.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/81971fb1a3bd5fa1e829bd168947b6056f61726ba06d1ece7cf905120156c5b4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/870defa92a3d832f652b2f1534c21d488f3c9c29f80300cc6f066bb5e07c1501.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/8896c801e9f1e6a6306fe516f8587b2d8f0fefe1ba45ad447623e7413813c879.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/89f657d253aa7f91c4e99e3449749d1e91f798d44085d664dc6a7ebf68ee2938.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/8a2ca688228e8a0e023357b844f93c9f57a04adef275ae3bdd5539032d23336e.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/8b656ab244bc6a4570705b0a29e260921a55a6b992c924b32dfbff39ae2b1f19.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/8e36fac5980e4134d7ad6358aaa94991315c4bf0cb0b9ba59ca28affaaa8b090.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/92a4bf6c3164cd8b0a63ea2874cfd3f748d79a1a768f7767103e75707f39fc75.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/94a462b46fd14d3ef26cf19522b95d5d10520694ad579c59c5477e66080964a4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/9509d990994dcf6804964590e6c1d1409acd6d95ca1c19e917ec5b180b7a8a52.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/968fbc0e264616baa405f9869db87d4e2cfa9c7467f21fe90030c3ef9d209060.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/96b46ff870768b9b30672a50622c076cfc91bb562b178e98db2461db6fa42788.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/97197e189fe2f6120c62ce4d9785980d2739c4c93d32257fed16ddf1bc3b7313.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/977e57e53e7edb445661fff6d82a689a6af4111ba0d82055e4e39d00799dbe3f.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/99ecd8e8d0a95bc6557f76d66a3eb8d66249a4abae09903d4865568cca3a64cc.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/9a2c15488a886a808ff2d007e4e946fdba829e9f1052ac653cbfb5fff72fe684.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/9d4f531d54139b5eebf27d9ab1859185e377600039a9ffd7b44f0adf0ef9fb4c.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a33dbf7521ca996e9623df3c9feee59fa12efd142d3a4d6827cd1fd6e9d7cbaa.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a4e26f7fb3db04b1593c0a9c69b4733619fa24d1c43cf67090e24e89df0566d4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a5a0c7ad6fed41220089cf75cddf0370df72e12a59df9cf8a4a05064812bc0ab.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a6f0443235eb842d786bc860c4275370189c83d6e2ca5b33d0960faa706ba857.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a7e3e28e81b1ebff6ed80d3a617e084fa7783e5d88a27db813dab3af7628f2a6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/a815ac2624787d0f23153c7cd5c2a319f793a718e3c9512c552de71ba5c4de6a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/aaa7bb26b7e8c0234d670502069eca1cf51f9832da9d436b028bb8921b1ba2f2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/ac4d03ce5d75b0f656a4d9910ee523eda16c4302d961cc21cf5255ff7e79b157.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/b06e4f57135f1c478d8ad77e310227e959567e9cd4867469c855a76db934ffa9.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/b11fc93e2aa8fc1e9da08b96ff00520af1e0bbf0659cecc301786609cbfec533.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/b397a71fbe6b6296a125e2e85408afec728f8af7b687a7ed99a139ac50a4308d.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/b508a3d972d17a2377ff5a99ab0044105cf81c38859bd4517d491f942fd1d824.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/b5285587c30d3c71d176439a03505d20e9bee538babf1e45c934a0ec9885f044.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bc1c0d7fc765c8433fdc15f1e9f42ba9f6b7fe645c88ad800a8f5f3d36cd47d4.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bc352c92496d185eb7ab794024fa491af8e07f21f52a83ced991cf5b8ae85292.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bc4ed8dbbc7d724de50ca3d83590d02c42a36b9efe6088d9a6d609dc361616bf.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bd94fe78bcbf2439f4bb0e9e879a410c94f3736933377ed009322ba459075c15.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bf5fd8346dcd48038297ce54599f97b4707ea82afe70921c57d3922c28a64049.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/bfe16f4b587c58ebb6ce4ab02536fcf62bb9b8c2acf54aed2f61c611d2e47211.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c652fac55b6910644c8856da5b3f294d9358ae5753e14d878952dce53b9e0ef8.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c6d09b234c0b9acb4271ef0e8b95a3519f6067f27510dc7b4216d9fb2b92d6fc.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c6deab0caad0706b2bf77e3c29914e7622bd4790cd9734d8cc8b165cfd59566a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c6fbd526985fec412f5ec22e8b4e40c6d9319a365aad5e5919fb41a11e3f67d0.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c9a6762893315eaf796970195d4fbd9ee2d6fb2ba0a4aa5cc757c05ff36aed27.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/c9a6bff615ada067158c5f6861f10e7957c5df069b831d1a3ca493a939b9b342.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/ca7e51adac2e1b5b37fb64cb5e2f4e3e5d0f83845c102d4a84fef88f5b635ab5.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/cb4f807b8cc7e3ead78215b833ef4f5e62b9293739ea4bef00cfaed3a2c9fdd3.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/cc3c40550d6bc0d5789cbaddb826bb937f16e0bef0d37bdbc45b2327be77f6e5.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/d1b0346ec928a3b866a4fc01394a5782a8166b3ff209ac0f911fa721a0d67ec9.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/d388c12ad9cc3e076f3d12b5c431dde02560992808f8e05d3238b22c26730f4b.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/d586e2ab3a8de7b468aa0dd79e438e569223be96d4505e17fc4b0209aa12f7e6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/d5a142be10893776bf97eebf12be7b7b98037721023ce09b7f4121a4f89a1e65.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/da2819e4416c260da29dfe698c6a407b3c75d04e52e9079c82134eff96cad9c5.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/dee0cb1730898150cadc1760003701e137cf0c35ee87bfcc96690f948c5ecd0d.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/df7d6c16982345d5493a24a24cae035eba88925f11f83c69ecd80e6f760586a7.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e1ed36e1ae29199a5f6047be01180c9b618ac90f36d5886a9e3b881d590eebc6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e1f8e75ca678bd8304ba316df8445ca8fe73411f08f78759e757f6c3b4ef6d61.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e21e5a694af20967b6e0f7992fc9b5837817f57a1d6aebe2b0ff5364ccffcec2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e224d4726643b99c4d84a0ef035203529e4a3c9a101bc176cad4d33da1c3d7f9.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e39760bc1c431a0ad9718815f2b556be11a3b82b125b0dba1deda2b05a13f1e3.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e6a2e2127074abbefdecd1e7e0dd0dc6453dbb922a877b244a6742715c6f753c.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e8006695951c762a8dd3cda965618cb5d0909706f88eb5d7635cbc7e86dd20b6.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e83f1ef79ae487230e31ca6356f140cff0ca220080f29b0eac7f8acfd14b22dd.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e8c0c065c07edd358238657ec55935548586d3943bc11fa6280fff25033571db.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/e8c50abb0f8faaef3fe753dbdb588b301b546f8eef03fd6a9178d602e6874734.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/ef25dc1f8f253195c110e2e8e23f9d1d4124ba792407a13182bae4d8d17f90bd.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/ef6cf44707408c715ce1beea0638090f88232347736408ebd470d6f22b4eb2de.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/ef91ddc741061c8e2bb1539b93932cd205567bbdd4f28fbcc3274e6b1b0e93ba.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/f0910000f66bb23ae933e064d28e410689bf7feef7b8461f69a917ecdf39a9a9.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/f3393be34abfc38c876142c7ab5114c0f1cbe36c3bd6b9f9679830af2a9e598a.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/faaff35fce6fd2a0a61fde051e3d70881e474c22a4afb0380bf478ed44b08515.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/fcac9a7807242b1d3efe3599277f52e4827e153abad2e3ba3f0b41683db7c592.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/fd4ef08e9bc882990a8da885d61533136edd888362e205e314b0f2f10e271eb8.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/fe6038988b48b4146ef4a520048d614949c56f152b5c7d7f150a5c24187b1f77.csv
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/01be951a7fa102d7b0fe11474d6f0425ec9a1adac10e062a203be8c3a2e03cde.csv: collection/resource/01be951a7fa102d7b0fe11474d6f0425ec9a1adac10e062a203be8c3a2e03cde
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/02aacaa95c74a362e7d3a8dde05047cdad3cd9ae70f72d4a2f94c1bc690968b0.csv: collection/resource/02aacaa95c74a362e7d3a8dde05047cdad3cd9ae70f72d4a2f94c1bc690968b0
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/049fdc0cd8ee6323e4497bb849332e2a420f8c1d95817eda9a3866dbe3601d28.csv: collection/resource/049fdc0cd8ee6323e4497bb849332e2a420f8c1d95817eda9a3866dbe3601d28
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/0714b0476fcfec1282edfa787d842abcd417751a83c1b0f072bb9d4fbb1cb28e.csv: collection/resource/0714b0476fcfec1282edfa787d842abcd417751a83c1b0f072bb9d4fbb1cb28e
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/074ee8a00322c6e03bb5c32da2a9b6a4a9c98c67748d753cbacbc5c3b04ffa67.csv: collection/resource/074ee8a00322c6e03bb5c32da2a9b6a4a9c98c67748d753cbacbc5c3b04ffa67
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/07d19622d1bc1dadbfc2036b04f62eb5645fcacb8c8cee96f661097ff5fd837f.csv: collection/resource/07d19622d1bc1dadbfc2036b04f62eb5645fcacb8c8cee96f661097ff5fd837f
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/09caf6f7c20614c59ceb17721eb97a80c79afc091e5c4911b5ef53c7423f13d4.csv: collection/resource/09caf6f7c20614c59ceb17721eb97a80c79afc091e5c4911b5ef53c7423f13d4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/0b2e3a24d7afaf246af59140acf3a6b6dd251bf7492e7ac6a97a6752da51c0af.csv: collection/resource/0b2e3a24d7afaf246af59140acf3a6b6dd251bf7492e7ac6a97a6752da51c0af
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/0f3f9ac72b6c00a62b90817adeb3f9463f2557e4ccba021dfb8bf3a00d9fbfc4.csv: collection/resource/0f3f9ac72b6c00a62b90817adeb3f9463f2557e4ccba021dfb8bf3a00d9fbfc4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/1073479548b7f463221529fa0e050ac1608291d1c468f48b0cbbc138ad0f8c13.csv: collection/resource/1073479548b7f463221529fa0e050ac1608291d1c468f48b0cbbc138ad0f8c13
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/12cc46f327184365c7158234ea77a062590adb83749a7800a4c11a1055addb4b.csv: collection/resource/12cc46f327184365c7158234ea77a062590adb83749a7800a4c11a1055addb4b
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/16588bc1d29e4a9dc98eee32e6903d43791c166874fd70c8383ca70a6785276f.csv: collection/resource/16588bc1d29e4a9dc98eee32e6903d43791c166874fd70c8383ca70a6785276f
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/19754c7b5efdf964e6e2e944c6b80735735af807ecb11f8d9b0eb99fccab08a2.csv: collection/resource/19754c7b5efdf964e6e2e944c6b80735735af807ecb11f8d9b0eb99fccab08a2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/1acccef654bd756bdab29929b9ad59b83c29312a93c53dca06d407d4411233ff.csv: collection/resource/1acccef654bd756bdab29929b9ad59b83c29312a93c53dca06d407d4411233ff
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/1dec7f2e4c42ecaa22fd1e3a2819c9448c39faced8f6490c9685691bc6465e8e.csv: collection/resource/1dec7f2e4c42ecaa22fd1e3a2819c9448c39faced8f6490c9685691bc6465e8e
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/222fc750b0a22b61f1779d962b49285f34dedfd7ca979de1d21f7b7e805c913c.csv: collection/resource/222fc750b0a22b61f1779d962b49285f34dedfd7ca979de1d21f7b7e805c913c
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/24fe3893a253997ee2751105ccc3d105ff13f29bc465f9b8ebcf4bd398764de4.csv: collection/resource/24fe3893a253997ee2751105ccc3d105ff13f29bc465f9b8ebcf4bd398764de4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/28df3c3e2041314c17bf57c254a0f10ead3d5cfffe9024215fbd42b1f1ac582d.csv: collection/resource/28df3c3e2041314c17bf57c254a0f10ead3d5cfffe9024215fbd42b1f1ac582d
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2b55e2677181c9ef7bf19708899308409c080551d4c4942ab235af5d2c13c58b.csv: collection/resource/2b55e2677181c9ef7bf19708899308409c080551d4c4942ab235af5d2c13c58b
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2cd8772eec715160cb3fb3fef2e214a29cdb92debc8af8e5280af9b341b37a0b.csv: collection/resource/2cd8772eec715160cb3fb3fef2e214a29cdb92debc8af8e5280af9b341b37a0b
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2e2c2240217726a402e97be53c3ae0f19c82c005228cbfa76ec0ed2e04bf24b6.csv: collection/resource/2e2c2240217726a402e97be53c3ae0f19c82c005228cbfa76ec0ed2e04bf24b6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2e61449d1be8c63fd406f631dbdd425667310430e76dd958a07505dda60dd495.csv: collection/resource/2e61449d1be8c63fd406f631dbdd425667310430e76dd958a07505dda60dd495
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2e8d058c65dfa1125c50dc338bc5b0bfa7f022095df7b17893faca06f95fb6cc.csv: collection/resource/2e8d058c65dfa1125c50dc338bc5b0bfa7f022095df7b17893faca06f95fb6cc
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2efdd3a07a3785e92b2502239f928c9e4d924e4ca207a470ea4627af9d9b5a8a.csv: collection/resource/2efdd3a07a3785e92b2502239f928c9e4d924e4ca207a470ea4627af9d9b5a8a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2f36a61dfc7c94bbc01d6f6cfac014759658146fab1b6f8a1e06ca7829ab7cfa.csv: collection/resource/2f36a61dfc7c94bbc01d6f6cfac014759658146fab1b6f8a1e06ca7829ab7cfa
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/2fe9e99f58656dc72b0d68e2b25a4e89231ba31a8398eb984b3f5b81173b4fed.csv: collection/resource/2fe9e99f58656dc72b0d68e2b25a4e89231ba31a8398eb984b3f5b81173b4fed
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/31884f93aa81ce5fab29e438b38afbc85a25dba5b049a2f68c34ba3c5a429a99.csv: collection/resource/31884f93aa81ce5fab29e438b38afbc85a25dba5b049a2f68c34ba3c5a429a99
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3704eee04998e079c0cf2647b9dce20de9ba4738ff18a7894a8dfcb7912612e6.csv: collection/resource/3704eee04998e079c0cf2647b9dce20de9ba4738ff18a7894a8dfcb7912612e6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/378fa5366ad0e69fae22e5eda42e3719d8663bd2a050f12ccf7318f5229d0f2a.csv: collection/resource/378fa5366ad0e69fae22e5eda42e3719d8663bd2a050f12ccf7318f5229d0f2a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3a0b2d8b16980503c8ffb84d310a44d8970c3f45688c42a4d5cb344425137ded.csv: collection/resource/3a0b2d8b16980503c8ffb84d310a44d8970c3f45688c42a4d5cb344425137ded
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3b1eb7aeae299dfaae06b3b718890e7f068f1f50d9c419720bb0824236ae86de.csv: collection/resource/3b1eb7aeae299dfaae06b3b718890e7f068f1f50d9c419720bb0824236ae86de
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3b3b20cf2d826c61ecd02cd121b633c4b1675cd069a11d72301fb459fbc0c200.csv: collection/resource/3b3b20cf2d826c61ecd02cd121b633c4b1675cd069a11d72301fb459fbc0c200
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3c75a892d85006b883832359adda7c27ea8f2855781955d1d6653b319f1efd26.csv: collection/resource/3c75a892d85006b883832359adda7c27ea8f2855781955d1d6653b319f1efd26
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3cbf0b1a304271b6e885b5cad87dcdf2f8c811144d694745caf3fbe1409e695a.csv: collection/resource/3cbf0b1a304271b6e885b5cad87dcdf2f8c811144d694745caf3fbe1409e695a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3daa7fd4cee035dd2bd113640763ac8e85827245040594fa441c4c271af02940.csv: collection/resource/3daa7fd4cee035dd2bd113640763ac8e85827245040594fa441c4c271af02940
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3dded714e590eff05269597106d5f3091bd6d56e254037f304fe8b42fd423570.csv: collection/resource/3dded714e590eff05269597106d5f3091bd6d56e254037f304fe8b42fd423570
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/3ebe7169e8fcb3a7dd87061c408b8ba8acf0afb601f0044557eb5aa70d6e264a.csv: collection/resource/3ebe7169e8fcb3a7dd87061c408b8ba8acf0afb601f0044557eb5aa70d6e264a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/42c3327452e907d99308647a8ae3cd6e14b8e19e424a25c714ef78bb578c8703.csv: collection/resource/42c3327452e907d99308647a8ae3cd6e14b8e19e424a25c714ef78bb578c8703
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/42d6bd71666442705853cf48ac485b14d5c0dce764ca72349b42c09e0ee0fef2.csv: collection/resource/42d6bd71666442705853cf48ac485b14d5c0dce764ca72349b42c09e0ee0fef2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/42ea1960f9489a696bfe032f655cbcac9ec399279485a3cf5a6d1ac74857926a.csv: collection/resource/42ea1960f9489a696bfe032f655cbcac9ec399279485a3cf5a6d1ac74857926a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/43a7cc998920a68475fe34b302b7ee742465341ce0bf1e058ec8b355857163f2.csv: collection/resource/43a7cc998920a68475fe34b302b7ee742465341ce0bf1e058ec8b355857163f2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/447792d3aca497b88e691d20bccd554573df188c284be10bc3b6b1be59d5ac91.csv: collection/resource/447792d3aca497b88e691d20bccd554573df188c284be10bc3b6b1be59d5ac91
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/4615301e4239d001be91451b86039a9bf733f6ec1d2ce34e8f117d1713de8ce3.csv: collection/resource/4615301e4239d001be91451b86039a9bf733f6ec1d2ce34e8f117d1713de8ce3
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/480ca8877525407b0550e98a900d49636ab0ce1d251724d30fbc57ab1a6fc544.csv: collection/resource/480ca8877525407b0550e98a900d49636ab0ce1d251724d30fbc57ab1a6fc544
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/48961285d772a2626b9d2e316066aff33ed5ae2ada9810c0e2f817cd50e8aa53.csv: collection/resource/48961285d772a2626b9d2e316066aff33ed5ae2ada9810c0e2f817cd50e8aa53
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/48e812927803dc4778b2ee5d468f36f8d0d1e000f5be0280eb8e20941d9efe12.csv: collection/resource/48e812927803dc4778b2ee5d468f36f8d0d1e000f5be0280eb8e20941d9efe12
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/4c76222c3e8147225514dc876d18de6be44ff60394a353bfff2dbdfd2ddeff75.csv: collection/resource/4c76222c3e8147225514dc876d18de6be44ff60394a353bfff2dbdfd2ddeff75
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/4dfc0342a1d8b133f5bf03cda60127a47d17969e593c6a976dc0e5068ad1b78a.csv: collection/resource/4dfc0342a1d8b133f5bf03cda60127a47d17969e593c6a976dc0e5068ad1b78a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/4fdd0e1248dd1ad5ae5c3d71197fcf9ad3d245bb6cd88e9b245c5978e9c45e91.csv: collection/resource/4fdd0e1248dd1ad5ae5c3d71197fcf9ad3d245bb6cd88e9b245c5978e9c45e91
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/53c4f3c31fab2e91f62680fc7b84a8718277cab224f6a47079004338506fb181.csv: collection/resource/53c4f3c31fab2e91f62680fc7b84a8718277cab224f6a47079004338506fb181
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/558bf532ec056bf6e7b017a89647dd559d873808cf883dd0dd770b7e6c085dee.csv: collection/resource/558bf532ec056bf6e7b017a89647dd559d873808cf883dd0dd770b7e6c085dee
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/565c81c97e7096fbd5b18655cdbc30b30d0b81bcb6139ed6ec1ab55fef10f145.csv: collection/resource/565c81c97e7096fbd5b18655cdbc30b30d0b81bcb6139ed6ec1ab55fef10f145
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/573bc717f35f65c42a5c5195a325398e5c57d4104c1b98b369f361ea780c626c.csv: collection/resource/573bc717f35f65c42a5c5195a325398e5c57d4104c1b98b369f361ea780c626c
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/5a2a1f1c2bfbc1d1cf45932d51aa69cb62cd168043223295fea067c7583a9049.csv: collection/resource/5a2a1f1c2bfbc1d1cf45932d51aa69cb62cd168043223295fea067c7583a9049
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/5b45771afc8eb4a2b400d7d3266e2d37cc206a17feb078e14b6f9461e8eb3ab6.csv: collection/resource/5b45771afc8eb4a2b400d7d3266e2d37cc206a17feb078e14b6f9461e8eb3ab6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/5b79ee5122c4781ba9e187cee3a17c4073c002e154a9797759c45fffc5d38626.csv: collection/resource/5b79ee5122c4781ba9e187cee3a17c4073c002e154a9797759c45fffc5d38626
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/5bc2c2207f771efd208c3125f33c84f886e1fa1dabe8fec0820c9a2809a6bc2e.csv: collection/resource/5bc2c2207f771efd208c3125f33c84f886e1fa1dabe8fec0820c9a2809a6bc2e
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/5e0866263cf16b6f6bce971c901d7abb8d923104f8a10daa740d1894f2ab3d66.csv: collection/resource/5e0866263cf16b6f6bce971c901d7abb8d923104f8a10daa740d1894f2ab3d66
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/62ff5ca2b8276ef277216290f04b4e60068f802097972e4efcb070bf626ca2d8.csv: collection/resource/62ff5ca2b8276ef277216290f04b4e60068f802097972e4efcb070bf626ca2d8
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/63ca8f5cc057e0cab803c653fc24482f4dbaf15313365721628b72e6181ceb82.csv: collection/resource/63ca8f5cc057e0cab803c653fc24482f4dbaf15313365721628b72e6181ceb82
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/645db73ddaad9c75d18a0fbfe2361aa02f56e159a02cf227545921962e9fc849.csv: collection/resource/645db73ddaad9c75d18a0fbfe2361aa02f56e159a02cf227545921962e9fc849
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/6467dcf7a44b60195b087d48161852b1491178ba44d09c1dc40130162c68a4f1.csv: collection/resource/6467dcf7a44b60195b087d48161852b1491178ba44d09c1dc40130162c68a4f1
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/67b489d63d3e7aad691a1cca101e3ef34754e404768248508c6280514adf305a.csv: collection/resource/67b489d63d3e7aad691a1cca101e3ef34754e404768248508c6280514adf305a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/69b814bafd46e3d0db937b88c34ec8794d91919b34f86b1765e432143fc1ec97.csv: collection/resource/69b814bafd46e3d0db937b88c34ec8794d91919b34f86b1765e432143fc1ec97
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/6ae597d29b792f496cf336adb58cb4734774af0890bd05681d042ea0652b7fa8.csv: collection/resource/6ae597d29b792f496cf336adb58cb4734774af0890bd05681d042ea0652b7fa8
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/6b21367609b1e5313eef2e88d1d70c7ac28c33b29c75844961d7899e95c19869.csv: collection/resource/6b21367609b1e5313eef2e88d1d70c7ac28c33b29c75844961d7899e95c19869
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/700ee0f270f6946e52fde248e6508bf7fd1749c5574c90f7fff98523283b2200.csv: collection/resource/700ee0f270f6946e52fde248e6508bf7fd1749c5574c90f7fff98523283b2200
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/716b70c75cfc7c437f54b8cf97e156801ce7816ec02c597fc0d44dc2dc0febc5.csv: collection/resource/716b70c75cfc7c437f54b8cf97e156801ce7816ec02c597fc0d44dc2dc0febc5
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/72cd090b673e88507e99770ec36d66f4dc00fbc5110cea455ab3680e9ffdaeea.csv: collection/resource/72cd090b673e88507e99770ec36d66f4dc00fbc5110cea455ab3680e9ffdaeea
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/74b22e643ce82e8cc69002b52386c08e846006a2a2a8cbc7a9ea610679e73d7b.csv: collection/resource/74b22e643ce82e8cc69002b52386c08e846006a2a2a8cbc7a9ea610679e73d7b
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7563733e346d813effa9d7b9bd1c9ac1c50bd5589630dc539516d4a6515d78c8.csv: collection/resource/7563733e346d813effa9d7b9bd1c9ac1c50bd5589630dc539516d4a6515d78c8
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/75d9167b80dfb83d1404997a06687c37b492e3206a73e50b1217053b21b1b707.csv: collection/resource/75d9167b80dfb83d1404997a06687c37b492e3206a73e50b1217053b21b1b707
+	$(run-pipeline)
 
 $(TRANSFORMED_DIR)infrastructure-funding-statement/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3.csv: collection/resource/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7950d2a3e60a63cfe35203540ff38726df385be477e707561d1ac084e2dcf750.csv: collection/resource/7950d2a3e60a63cfe35203540ff38726df385be477e707561d1ac084e2dcf750
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7a6d000fb1b8971934931d499f3c3f3b65f81ee26a3e94cc80fdaee05ec1f6f5.csv: collection/resource/7a6d000fb1b8971934931d499f3c3f3b65f81ee26a3e94cc80fdaee05ec1f6f5
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7af6d78e89d2b3808dda509cb12df22a47a7838bc74c68b6fcc4e1b1ffff1263.csv: collection/resource/7af6d78e89d2b3808dda509cb12df22a47a7838bc74c68b6fcc4e1b1ffff1263
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7b2ab124055f31d6a6ff5a0d969cc14fa75d50b1bd06978b2f0d6ea0ed827734.csv: collection/resource/7b2ab124055f31d6a6ff5a0d969cc14fa75d50b1bd06978b2f0d6ea0ed827734
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7bc71c716645c65f33a1395980fff06e272ff9716cc84075023ff79dada6aa80.csv: collection/resource/7bc71c716645c65f33a1395980fff06e272ff9716cc84075023ff79dada6aa80
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7d001a02c804711bd21933f25f329c1f6160aae309a9d8c25999f4582a92b000.csv: collection/resource/7d001a02c804711bd21933f25f329c1f6160aae309a9d8c25999f4582a92b000
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/7f214e55651666ca645fcc09697887707dd899b49a12a660bcfff817e5badeae.csv: collection/resource/7f214e55651666ca645fcc09697887707dd899b49a12a660bcfff817e5badeae
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/806d62c4930aba7f31c1ecee9346c7fcc8d718a2f771c58473f8b0fad060aefc.csv: collection/resource/806d62c4930aba7f31c1ecee9346c7fcc8d718a2f771c58473f8b0fad060aefc
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/81971fb1a3bd5fa1e829bd168947b6056f61726ba06d1ece7cf905120156c5b4.csv: collection/resource/81971fb1a3bd5fa1e829bd168947b6056f61726ba06d1ece7cf905120156c5b4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/870defa92a3d832f652b2f1534c21d488f3c9c29f80300cc6f066bb5e07c1501.csv: collection/resource/870defa92a3d832f652b2f1534c21d488f3c9c29f80300cc6f066bb5e07c1501
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/8896c801e9f1e6a6306fe516f8587b2d8f0fefe1ba45ad447623e7413813c879.csv: collection/resource/8896c801e9f1e6a6306fe516f8587b2d8f0fefe1ba45ad447623e7413813c879
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/89f657d253aa7f91c4e99e3449749d1e91f798d44085d664dc6a7ebf68ee2938.csv: collection/resource/89f657d253aa7f91c4e99e3449749d1e91f798d44085d664dc6a7ebf68ee2938
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/8a2ca688228e8a0e023357b844f93c9f57a04adef275ae3bdd5539032d23336e.csv: collection/resource/8a2ca688228e8a0e023357b844f93c9f57a04adef275ae3bdd5539032d23336e
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/8b656ab244bc6a4570705b0a29e260921a55a6b992c924b32dfbff39ae2b1f19.csv: collection/resource/8b656ab244bc6a4570705b0a29e260921a55a6b992c924b32dfbff39ae2b1f19
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/8e36fac5980e4134d7ad6358aaa94991315c4bf0cb0b9ba59ca28affaaa8b090.csv: collection/resource/8e36fac5980e4134d7ad6358aaa94991315c4bf0cb0b9ba59ca28affaaa8b090
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/92a4bf6c3164cd8b0a63ea2874cfd3f748d79a1a768f7767103e75707f39fc75.csv: collection/resource/92a4bf6c3164cd8b0a63ea2874cfd3f748d79a1a768f7767103e75707f39fc75
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/94a462b46fd14d3ef26cf19522b95d5d10520694ad579c59c5477e66080964a4.csv: collection/resource/94a462b46fd14d3ef26cf19522b95d5d10520694ad579c59c5477e66080964a4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/9509d990994dcf6804964590e6c1d1409acd6d95ca1c19e917ec5b180b7a8a52.csv: collection/resource/9509d990994dcf6804964590e6c1d1409acd6d95ca1c19e917ec5b180b7a8a52
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/968fbc0e264616baa405f9869db87d4e2cfa9c7467f21fe90030c3ef9d209060.csv: collection/resource/968fbc0e264616baa405f9869db87d4e2cfa9c7467f21fe90030c3ef9d209060
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/96b46ff870768b9b30672a50622c076cfc91bb562b178e98db2461db6fa42788.csv: collection/resource/96b46ff870768b9b30672a50622c076cfc91bb562b178e98db2461db6fa42788
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/97197e189fe2f6120c62ce4d9785980d2739c4c93d32257fed16ddf1bc3b7313.csv: collection/resource/97197e189fe2f6120c62ce4d9785980d2739c4c93d32257fed16ddf1bc3b7313
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/977e57e53e7edb445661fff6d82a689a6af4111ba0d82055e4e39d00799dbe3f.csv: collection/resource/977e57e53e7edb445661fff6d82a689a6af4111ba0d82055e4e39d00799dbe3f
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/99ecd8e8d0a95bc6557f76d66a3eb8d66249a4abae09903d4865568cca3a64cc.csv: collection/resource/99ecd8e8d0a95bc6557f76d66a3eb8d66249a4abae09903d4865568cca3a64cc
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/9a2c15488a886a808ff2d007e4e946fdba829e9f1052ac653cbfb5fff72fe684.csv: collection/resource/9a2c15488a886a808ff2d007e4e946fdba829e9f1052ac653cbfb5fff72fe684
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/9d4f531d54139b5eebf27d9ab1859185e377600039a9ffd7b44f0adf0ef9fb4c.csv: collection/resource/9d4f531d54139b5eebf27d9ab1859185e377600039a9ffd7b44f0adf0ef9fb4c
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a33dbf7521ca996e9623df3c9feee59fa12efd142d3a4d6827cd1fd6e9d7cbaa.csv: collection/resource/a33dbf7521ca996e9623df3c9feee59fa12efd142d3a4d6827cd1fd6e9d7cbaa
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a4e26f7fb3db04b1593c0a9c69b4733619fa24d1c43cf67090e24e89df0566d4.csv: collection/resource/a4e26f7fb3db04b1593c0a9c69b4733619fa24d1c43cf67090e24e89df0566d4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a5a0c7ad6fed41220089cf75cddf0370df72e12a59df9cf8a4a05064812bc0ab.csv: collection/resource/a5a0c7ad6fed41220089cf75cddf0370df72e12a59df9cf8a4a05064812bc0ab
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a6f0443235eb842d786bc860c4275370189c83d6e2ca5b33d0960faa706ba857.csv: collection/resource/a6f0443235eb842d786bc860c4275370189c83d6e2ca5b33d0960faa706ba857
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a7e3e28e81b1ebff6ed80d3a617e084fa7783e5d88a27db813dab3af7628f2a6.csv: collection/resource/a7e3e28e81b1ebff6ed80d3a617e084fa7783e5d88a27db813dab3af7628f2a6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/a815ac2624787d0f23153c7cd5c2a319f793a718e3c9512c552de71ba5c4de6a.csv: collection/resource/a815ac2624787d0f23153c7cd5c2a319f793a718e3c9512c552de71ba5c4de6a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/aaa7bb26b7e8c0234d670502069eca1cf51f9832da9d436b028bb8921b1ba2f2.csv: collection/resource/aaa7bb26b7e8c0234d670502069eca1cf51f9832da9d436b028bb8921b1ba2f2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/ac4d03ce5d75b0f656a4d9910ee523eda16c4302d961cc21cf5255ff7e79b157.csv: collection/resource/ac4d03ce5d75b0f656a4d9910ee523eda16c4302d961cc21cf5255ff7e79b157
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/b06e4f57135f1c478d8ad77e310227e959567e9cd4867469c855a76db934ffa9.csv: collection/resource/b06e4f57135f1c478d8ad77e310227e959567e9cd4867469c855a76db934ffa9
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/b11fc93e2aa8fc1e9da08b96ff00520af1e0bbf0659cecc301786609cbfec533.csv: collection/resource/b11fc93e2aa8fc1e9da08b96ff00520af1e0bbf0659cecc301786609cbfec533
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/b397a71fbe6b6296a125e2e85408afec728f8af7b687a7ed99a139ac50a4308d.csv: collection/resource/b397a71fbe6b6296a125e2e85408afec728f8af7b687a7ed99a139ac50a4308d
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/b508a3d972d17a2377ff5a99ab0044105cf81c38859bd4517d491f942fd1d824.csv: collection/resource/b508a3d972d17a2377ff5a99ab0044105cf81c38859bd4517d491f942fd1d824
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/b5285587c30d3c71d176439a03505d20e9bee538babf1e45c934a0ec9885f044.csv: collection/resource/b5285587c30d3c71d176439a03505d20e9bee538babf1e45c934a0ec9885f044
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bc1c0d7fc765c8433fdc15f1e9f42ba9f6b7fe645c88ad800a8f5f3d36cd47d4.csv: collection/resource/bc1c0d7fc765c8433fdc15f1e9f42ba9f6b7fe645c88ad800a8f5f3d36cd47d4
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bc352c92496d185eb7ab794024fa491af8e07f21f52a83ced991cf5b8ae85292.csv: collection/resource/bc352c92496d185eb7ab794024fa491af8e07f21f52a83ced991cf5b8ae85292
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bc4ed8dbbc7d724de50ca3d83590d02c42a36b9efe6088d9a6d609dc361616bf.csv: collection/resource/bc4ed8dbbc7d724de50ca3d83590d02c42a36b9efe6088d9a6d609dc361616bf
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bd94fe78bcbf2439f4bb0e9e879a410c94f3736933377ed009322ba459075c15.csv: collection/resource/bd94fe78bcbf2439f4bb0e9e879a410c94f3736933377ed009322ba459075c15
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bf5fd8346dcd48038297ce54599f97b4707ea82afe70921c57d3922c28a64049.csv: collection/resource/bf5fd8346dcd48038297ce54599f97b4707ea82afe70921c57d3922c28a64049
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/bfe16f4b587c58ebb6ce4ab02536fcf62bb9b8c2acf54aed2f61c611d2e47211.csv: collection/resource/bfe16f4b587c58ebb6ce4ab02536fcf62bb9b8c2acf54aed2f61c611d2e47211
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c652fac55b6910644c8856da5b3f294d9358ae5753e14d878952dce53b9e0ef8.csv: collection/resource/c652fac55b6910644c8856da5b3f294d9358ae5753e14d878952dce53b9e0ef8
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c6d09b234c0b9acb4271ef0e8b95a3519f6067f27510dc7b4216d9fb2b92d6fc.csv: collection/resource/c6d09b234c0b9acb4271ef0e8b95a3519f6067f27510dc7b4216d9fb2b92d6fc
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c6deab0caad0706b2bf77e3c29914e7622bd4790cd9734d8cc8b165cfd59566a.csv: collection/resource/c6deab0caad0706b2bf77e3c29914e7622bd4790cd9734d8cc8b165cfd59566a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c6fbd526985fec412f5ec22e8b4e40c6d9319a365aad5e5919fb41a11e3f67d0.csv: collection/resource/c6fbd526985fec412f5ec22e8b4e40c6d9319a365aad5e5919fb41a11e3f67d0
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c9a6762893315eaf796970195d4fbd9ee2d6fb2ba0a4aa5cc757c05ff36aed27.csv: collection/resource/c9a6762893315eaf796970195d4fbd9ee2d6fb2ba0a4aa5cc757c05ff36aed27
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/c9a6bff615ada067158c5f6861f10e7957c5df069b831d1a3ca493a939b9b342.csv: collection/resource/c9a6bff615ada067158c5f6861f10e7957c5df069b831d1a3ca493a939b9b342
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/ca7e51adac2e1b5b37fb64cb5e2f4e3e5d0f83845c102d4a84fef88f5b635ab5.csv: collection/resource/ca7e51adac2e1b5b37fb64cb5e2f4e3e5d0f83845c102d4a84fef88f5b635ab5
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/cb4f807b8cc7e3ead78215b833ef4f5e62b9293739ea4bef00cfaed3a2c9fdd3.csv: collection/resource/cb4f807b8cc7e3ead78215b833ef4f5e62b9293739ea4bef00cfaed3a2c9fdd3
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/cc3c40550d6bc0d5789cbaddb826bb937f16e0bef0d37bdbc45b2327be77f6e5.csv: collection/resource/cc3c40550d6bc0d5789cbaddb826bb937f16e0bef0d37bdbc45b2327be77f6e5
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/d1b0346ec928a3b866a4fc01394a5782a8166b3ff209ac0f911fa721a0d67ec9.csv: collection/resource/d1b0346ec928a3b866a4fc01394a5782a8166b3ff209ac0f911fa721a0d67ec9
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/d388c12ad9cc3e076f3d12b5c431dde02560992808f8e05d3238b22c26730f4b.csv: collection/resource/d388c12ad9cc3e076f3d12b5c431dde02560992808f8e05d3238b22c26730f4b
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/d586e2ab3a8de7b468aa0dd79e438e569223be96d4505e17fc4b0209aa12f7e6.csv: collection/resource/d586e2ab3a8de7b468aa0dd79e438e569223be96d4505e17fc4b0209aa12f7e6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/d5a142be10893776bf97eebf12be7b7b98037721023ce09b7f4121a4f89a1e65.csv: collection/resource/d5a142be10893776bf97eebf12be7b7b98037721023ce09b7f4121a4f89a1e65
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/da2819e4416c260da29dfe698c6a407b3c75d04e52e9079c82134eff96cad9c5.csv: collection/resource/da2819e4416c260da29dfe698c6a407b3c75d04e52e9079c82134eff96cad9c5
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/dee0cb1730898150cadc1760003701e137cf0c35ee87bfcc96690f948c5ecd0d.csv: collection/resource/dee0cb1730898150cadc1760003701e137cf0c35ee87bfcc96690f948c5ecd0d
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/df7d6c16982345d5493a24a24cae035eba88925f11f83c69ecd80e6f760586a7.csv: collection/resource/df7d6c16982345d5493a24a24cae035eba88925f11f83c69ecd80e6f760586a7
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e1ed36e1ae29199a5f6047be01180c9b618ac90f36d5886a9e3b881d590eebc6.csv: collection/resource/e1ed36e1ae29199a5f6047be01180c9b618ac90f36d5886a9e3b881d590eebc6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e1f8e75ca678bd8304ba316df8445ca8fe73411f08f78759e757f6c3b4ef6d61.csv: collection/resource/e1f8e75ca678bd8304ba316df8445ca8fe73411f08f78759e757f6c3b4ef6d61
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e21e5a694af20967b6e0f7992fc9b5837817f57a1d6aebe2b0ff5364ccffcec2.csv: collection/resource/e21e5a694af20967b6e0f7992fc9b5837817f57a1d6aebe2b0ff5364ccffcec2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e224d4726643b99c4d84a0ef035203529e4a3c9a101bc176cad4d33da1c3d7f9.csv: collection/resource/e224d4726643b99c4d84a0ef035203529e4a3c9a101bc176cad4d33da1c3d7f9
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e39760bc1c431a0ad9718815f2b556be11a3b82b125b0dba1deda2b05a13f1e3.csv: collection/resource/e39760bc1c431a0ad9718815f2b556be11a3b82b125b0dba1deda2b05a13f1e3
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e6a2e2127074abbefdecd1e7e0dd0dc6453dbb922a877b244a6742715c6f753c.csv: collection/resource/e6a2e2127074abbefdecd1e7e0dd0dc6453dbb922a877b244a6742715c6f753c
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e8006695951c762a8dd3cda965618cb5d0909706f88eb5d7635cbc7e86dd20b6.csv: collection/resource/e8006695951c762a8dd3cda965618cb5d0909706f88eb5d7635cbc7e86dd20b6
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e83f1ef79ae487230e31ca6356f140cff0ca220080f29b0eac7f8acfd14b22dd.csv: collection/resource/e83f1ef79ae487230e31ca6356f140cff0ca220080f29b0eac7f8acfd14b22dd
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e8c0c065c07edd358238657ec55935548586d3943bc11fa6280fff25033571db.csv: collection/resource/e8c0c065c07edd358238657ec55935548586d3943bc11fa6280fff25033571db
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/e8c50abb0f8faaef3fe753dbdb588b301b546f8eef03fd6a9178d602e6874734.csv: collection/resource/e8c50abb0f8faaef3fe753dbdb588b301b546f8eef03fd6a9178d602e6874734
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/ef25dc1f8f253195c110e2e8e23f9d1d4124ba792407a13182bae4d8d17f90bd.csv: collection/resource/ef25dc1f8f253195c110e2e8e23f9d1d4124ba792407a13182bae4d8d17f90bd
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/ef6cf44707408c715ce1beea0638090f88232347736408ebd470d6f22b4eb2de.csv: collection/resource/ef6cf44707408c715ce1beea0638090f88232347736408ebd470d6f22b4eb2de
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/ef91ddc741061c8e2bb1539b93932cd205567bbdd4f28fbcc3274e6b1b0e93ba.csv: collection/resource/ef91ddc741061c8e2bb1539b93932cd205567bbdd4f28fbcc3274e6b1b0e93ba
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/f0910000f66bb23ae933e064d28e410689bf7feef7b8461f69a917ecdf39a9a9.csv: collection/resource/f0910000f66bb23ae933e064d28e410689bf7feef7b8461f69a917ecdf39a9a9
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/f3393be34abfc38c876142c7ab5114c0f1cbe36c3bd6b9f9679830af2a9e598a.csv: collection/resource/f3393be34abfc38c876142c7ab5114c0f1cbe36c3bd6b9f9679830af2a9e598a
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/faaff35fce6fd2a0a61fde051e3d70881e474c22a4afb0380bf478ed44b08515.csv: collection/resource/faaff35fce6fd2a0a61fde051e3d70881e474c22a4afb0380bf478ed44b08515
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/fcac9a7807242b1d3efe3599277f52e4827e153abad2e3ba3f0b41683db7c592.csv: collection/resource/fcac9a7807242b1d3efe3599277f52e4827e153abad2e3ba3f0b41683db7c592
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/fd4ef08e9bc882990a8da885d61533136edd888362e205e314b0f2f10e271eb8.csv: collection/resource/fd4ef08e9bc882990a8da885d61533136edd888362e205e314b0f2f10e271eb8
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/fe6038988b48b4146ef4a520048d614949c56f152b5c7d7f150a5c24187b1f77.csv: collection/resource/fe6038988b48b4146ef4a520048d614949c56f152b5c7d7f150a5c24187b1f77
 	$(run-pipeline)
 
 $(INFRASTRUCTURE_FUNDING_STATEMENT_DATASET): $(INFRASTRUCTURE_FUNDING_STATEMENT_TRANSFORMED_FILES)
