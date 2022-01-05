@@ -17,6 +17,7 @@ INFRASTRUCTURE_FUNDING_STATEMENT_TRANSFORMED_FILES=\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/7122ea34aa4144c60514e8f5eea232cb7b9e169e31c5e5afccf35980cabd7aa7.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/7226152f707ba4a30a5c62ac96ebc2c86c6d19c744b88fafe645e9d4286e21e9.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/78ce46f34293512bd3ee01c3cab78c9e5a14c66c3aeed8beca6930d49bf2fd8f.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/79470d4684bf6514bb78ef3122bffee09344a6d17e500bf8c83bb743b5c413f7.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/7adb1ec2d9b31b7cd8935b85a2363faf43852bb99f9d6532bb528d1a350af23f.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/7c378fe61e91580b930d36f094d3a6db099107922b3dd1b0d88e847d625d6a5a.csv\
@@ -47,7 +48,8 @@ INFRASTRUCTURE_FUNDING_STATEMENT_TRANSFORMED_FILES=\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/e88268530a1e1715acda465694cddda93bd13d4e526d995eae42bde403c7becd.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/eda4cf0b8bac60e75abdc3689b43325e7f126f2ef2ac7c484bdb68550cf810f4.csv\
     $(TRANSFORMED_DIR)infrastructure-funding-statement/f2f440edcd200aee65cbc6dab94f88a526741e16da6a4fcac687b4580f3c38c3.csv\
-    $(TRANSFORMED_DIR)infrastructure-funding-statement/fb87ba5c65ea26db507a4a868d12bf712de76efb111801b3440ab827271ab3b2.csv
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/fb87ba5c65ea26db507a4a868d12bf712de76efb111801b3440ab827271ab3b2.csv\
+    $(TRANSFORMED_DIR)infrastructure-funding-statement/fea7bfa5545a10c004f2f87f6e1e5b8ad11508cf6884d9d400e389193a5f5acf.csv
 
 $(TRANSFORMED_DIR)infrastructure-funding-statement/011b63ace112475a09de961a3da25ced0255f0816fc2967cbb96214cf1c41168.csv: collection/resource/011b63ace112475a09de961a3da25ced0255f0816fc2967cbb96214cf1c41168
 	$(run-pipeline)
@@ -98,6 +100,9 @@ $(TRANSFORMED_DIR)infrastructure-funding-statement/7226152f707ba4a30a5c62ac96ebc
 	$(run-pipeline)
 
 $(TRANSFORMED_DIR)infrastructure-funding-statement/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3.csv: collection/resource/77eb8ea9a284f8ed0f8969d29b98ad803bb71d7f49342d2d5f176d45cd3595d3
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/78ce46f34293512bd3ee01c3cab78c9e5a14c66c3aeed8beca6930d49bf2fd8f.csv: collection/resource/78ce46f34293512bd3ee01c3cab78c9e5a14c66c3aeed8beca6930d49bf2fd8f
 	$(run-pipeline)
 
 $(TRANSFORMED_DIR)infrastructure-funding-statement/79470d4684bf6514bb78ef3122bffee09344a6d17e500bf8c83bb743b5c413f7.csv: collection/resource/79470d4684bf6514bb78ef3122bffee09344a6d17e500bf8c83bb743b5c413f7
@@ -191,6 +196,9 @@ $(TRANSFORMED_DIR)infrastructure-funding-statement/f2f440edcd200aee65cbc6dab94f8
 	$(run-pipeline)
 
 $(TRANSFORMED_DIR)infrastructure-funding-statement/fb87ba5c65ea26db507a4a868d12bf712de76efb111801b3440ab827271ab3b2.csv: collection/resource/fb87ba5c65ea26db507a4a868d12bf712de76efb111801b3440ab827271ab3b2
+	$(run-pipeline)
+
+$(TRANSFORMED_DIR)infrastructure-funding-statement/fea7bfa5545a10c004f2f87f6e1e5b8ad11508cf6884d9d400e389193a5f5acf.csv: collection/resource/fea7bfa5545a10c004f2f87f6e1e5b8ad11508cf6884d9d400e389193a5f5acf
 	$(run-pipeline)
 
 $(INFRASTRUCTURE_FUNDING_STATEMENT_DATASET): $(INFRASTRUCTURE_FUNDING_STATEMENT_TRANSFORMED_FILES)
