@@ -1,4 +1,4 @@
-pipeline,resource,organisation,value,entity
+prefix,resource,organisation,value,entity
 infrastructure-funding-statement,,local-authority-eng:KEN,006a45b593a03962463e446f2b307262111ffca242b03bfebf131d12c11e0ad4,8100000
 infrastructure-funding-statement,,local-authority-eng:KIN,0361ecdc4ae9068421f26514c9cb4a09ef237d6500a6d5cb34fc5c8f6e4e65ee,8100001
 infrastructure-funding-statement,,local-authority-eng:LCE,06504c79a74a5ffbdf2b865b61760dbf24102118099320efab5449846a1c7a45,8100002
