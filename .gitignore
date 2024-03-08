@@ -24,3 +24,5 @@ collection/resource/
 dataset/
 transformed/
 issue/
+# Logs are in S3
+collection/log
