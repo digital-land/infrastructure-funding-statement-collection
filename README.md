@@ -31,6 +31,21 @@ The collected files can then be converted into a national dataset:
 
     $ make
 
+# Adding IFS Data
+
+This repository is slightly different in that there is only one endpoint, and we host it. The data entries are collected from the ./data/infrastructure-funding-statement.csv file, processed and then rendered on the platform. In order to add more data entries, create a csv file including the new data and the same fields as the existing infrastructure-funding-statement.csv file.
+
+Once you've created the csv file of the new data entries, you can run:
+- `python bin/create-appended-IFS-data.py [FILE PATH TO NEW DATA CSV]`
+
+
+If for some reason you need to specify a different file to append the new data to, other than infrastructure-funding-statement.csv:
+- `python bin/create-appended-IFS-data.py [FILE PATH TO NEW DATA CSV] --current_IFS_data_filepath [FILEPATH ALTERNATIVE ORIGINAL CSV]`
+
+This script should create a new file with the following name and location: `data/combined_IFS_data.csv`. This should contain all existing data entries with your additions, ordered alphabetically by organisation.
+
+Once the new file is checked, rename this to infrastructure-funding-statement.csv and delete the old file.
+
 # Licence
 
 The software in this project is open source and covered by the [LICENSE](LICENSE) file.
