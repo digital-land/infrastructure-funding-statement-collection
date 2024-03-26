@@ -6,7 +6,6 @@ import os
 import hashlib
 import pandas as pd
 
-
 def create_hash(document_url):
     document_url_str = str(document_url)
     return hashlib.sha256(document_url_str.encode("utf-8")).hexdigest()
