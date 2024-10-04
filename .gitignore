@@ -24,5 +24,15 @@ collection/resource/
 dataset/
 transformed/
 issue/
+hoisted/
+flattened/
+
+.idea
+.python-version
+# files built from the collection
+collection/log.csv
+collection/resource.csv
+collection/pipeline.mk
+
 # Logs are in S3
 collection/log
